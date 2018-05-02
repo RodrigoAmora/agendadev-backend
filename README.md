@@ -4,12 +4,8 @@ Um projeto para lista eventos de informática, feito em NodeJS 8.11.1
 
 Dependências:
 -------------
-```groovy
-npm install --save
-```groovy
+`npm install --save`
 
 Rodando o servidor:
 -------------------
-```groovy
-mpm start
-```groovy
+`mpm start`
