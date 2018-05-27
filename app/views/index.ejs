@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Agenda Dev</title>
+    <!--
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    -->
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
 <body>
@@ -23,7 +26,16 @@
 
       <div class="row">
         <br/>
-       
+        <% if(lista != null) { %>
+            <% for(var i = 0; i < lista.length; i++) {%>
+              <div class="col-xs-6 col-md-6 text-center">
+                <strong><%=lista[i].nome%></strong>
+                <hr>
+                <%=lista[i].descricao%><hr>
+                <strong>Site: </strong><a href="<%=lista[i].site%>" target="_balnk"><%=lista[i].site%></a>
+              </div>
+            <%}%>
+          <% } %>
       </div>
     </div>
 
